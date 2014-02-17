@@ -1,0 +1,33 @@
+<projectDescription>
+  <name>compoStudio</name>
+  <comment>The Guestbook Example changed to a one managed by Maven which also works on the Google Eclipse Plugin. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+    <buildCommand>
+      <name>com.google.gdt.eclipse.core.webAppProjectValidator</name>
+    </buildCommand>
+    <buildCommand>
+      <name>com.google.appengine.eclipse.core.projectValidator</name>
+    </buildCommand>
+    <buildCommand>
+      <name>org.eclipse.ui.externaltools.ExternalToolBuilder</name>
+      <arguments>
+        <dictionary>
+          <key>LaunchConfigHandle</key>
+          <value>&lt;project&gt;/.externalToolBuilders/MavenBuilder.launch</value>
+        </dictionary>
+      </arguments>
+    </buildCommand>
+    <buildCommand>
+      <name>com.google.appengine.eclipse.core.enhancerbuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+    <nature>com.google.gdt.eclipse.core.webAppNature</nature>
+    <nature>com.google.appengine.eclipse.core.gaeNature</nature>
+  </natures>
+</projectDescription>
