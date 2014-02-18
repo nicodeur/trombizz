@@ -1,7 +1,7 @@
-package fr.wirth.trombizz.shared.convert;
+package fr.unis.trombizz.shared.convert;
 
-import fr.wirth.trombizz.shared.bo.Collaborateur;
-import fr.wirth.trombizz.shared.dto.PersonneDto;
+import fr.unis.trombizz.shared.bo.Collaborateur;
+import fr.unis.trombizz.shared.dto.PersonneDto;
 
 /**
  *

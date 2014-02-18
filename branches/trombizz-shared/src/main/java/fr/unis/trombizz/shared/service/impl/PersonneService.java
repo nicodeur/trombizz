@@ -1,13 +1,13 @@
-package fr.wirth.trombizz.shared.service.impl;
+package fr.unis.trombizz.shared.service.impl;
 
-import fr.wirth.trombizz.shared.bo.Collaborateur;
-import fr.wirth.trombizz.shared.convert.CollaborateurConverter;
-import fr.wirth.trombizz.shared.convert.SimpleCollaborateurConverter;
-import fr.wirth.trombizz.shared.dao.IPersonneDao;
-import fr.wirth.trombizz.shared.dto.PersonneDto;
-import fr.wirth.trombizz.shared.dto.RecherchePersonneDto;
-import fr.wirth.trombizz.shared.dto.SimplePersonneDto;
-import fr.wirth.trombizz.shared.service.IPersonneService;
+import fr.unis.trombizz.shared.bo.Collaborateur;
+import fr.unis.trombizz.shared.convert.CollaborateurConverter;
+import fr.unis.trombizz.shared.convert.SimpleCollaborateurConverter;
+import fr.unis.trombizz.shared.dao.IPersonneDao;
+import fr.unis.trombizz.shared.dto.PersonneDto;
+import fr.unis.trombizz.shared.dto.RecherchePersonneDto;
+import fr.unis.trombizz.shared.dto.SimplePersonneDto;
+import fr.unis.trombizz.shared.service.IPersonneService;
 import java.util.List;
 
 /**

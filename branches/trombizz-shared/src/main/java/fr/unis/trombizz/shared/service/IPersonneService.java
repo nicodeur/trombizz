@@ -1,8 +1,8 @@
-package fr.wirth.trombizz.shared.service;
+package fr.unis.trombizz.shared.service;
 
-import fr.wirth.trombizz.shared.dto.PersonneDto;
-import fr.wirth.trombizz.shared.dto.RecherchePersonneDto;
-import fr.wirth.trombizz.shared.dto.SimplePersonneDto;
+import fr.unis.trombizz.shared.dto.PersonneDto;
+import fr.unis.trombizz.shared.dto.RecherchePersonneDto;
+import fr.unis.trombizz.shared.dto.SimplePersonneDto;
 import java.util.List;
 
 /**

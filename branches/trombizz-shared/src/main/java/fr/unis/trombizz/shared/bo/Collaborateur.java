@@ -1,4 +1,4 @@
-package fr.wirth.trombizz.shared.bo;
+package fr.unis.trombizz.shared.bo;
 
 import java.io.Serializable;
 import java.util.Date;

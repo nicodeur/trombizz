@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package fr.wirth.trombizz.shared.convert;
+package fr.unis.trombizz.shared.convert;
 
 import java.util.ArrayList;
 import java.util.List;

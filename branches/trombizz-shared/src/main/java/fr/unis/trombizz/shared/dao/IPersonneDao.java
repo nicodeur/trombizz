@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 
-package fr.wirth.trombizz.shared.dao;
+package fr.unis.trombizz.shared.dao;
 
-import fr.wirth.trombizz.shared.bo.Collaborateur;
-import fr.wirth.trombizz.shared.dto.RecherchePersonneDto;
+import fr.unis.trombizz.shared.bo.Collaborateur;
+import fr.unis.trombizz.shared.dto.RecherchePersonneDto;
 import java.util.List;
 
 /**

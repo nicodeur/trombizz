@@ -1,6 +1,6 @@
-package fr.wirth.trombizz.shared.viewer;
+package fr.unis.trombizz.shared.viewer;
 
-import fr.wirth.trombizz.shared.dto.RecherchePersonneDto;
+import fr.unis.trombizz.shared.dto.RecherchePersonneDto;
 
 /**
  *
