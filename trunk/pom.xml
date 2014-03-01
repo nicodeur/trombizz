@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>deblock</groupId>
-	<artifactId>compoStudio</artifactId>
+	<groupId>fr.unis</groupId>
+	<artifactId>trombizz</artifactId>
 	<version>1</version>
 	<packaging>war</packaging>
 
@@ -143,14 +143,14 @@ warSrcDirIsOutput=true]]>
 					<enhancerName>ASM</enhancerName>
 					<api>JDO</api>
 				</configuration>
-				<executions>
-					<execution>
-						<phase>compile</phase>
-						<goals>
-							<goal>enhance</goal>
-						</goals>
-					</execution>
-				</executions>
+<!-- 		TODO	<executions> -->
+<!-- 					<execution> -->
+<!-- 						<phase>compile</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>enhance</goal> -->
+<!-- 						</goals> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
 				<dependencies>
 					<dependency>
 						<groupId>org.datanucleus</groupId>
@@ -353,7 +353,7 @@ warSrcDirIsOutput=true]]>
 	<properties>
 		<maven.executable>mvn</maven.executable>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<gae.version>1.7.3</gae.version>
+		<gae.version>1.8.8</gae.version>
 		<datanucleus.version>3.1.1</datanucleus.version>
 		<jdo.version>3.0.1</jdo.version>
 	</properties>
