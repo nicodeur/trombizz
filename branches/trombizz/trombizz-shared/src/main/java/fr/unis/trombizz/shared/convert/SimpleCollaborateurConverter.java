@@ -1,13 +1,13 @@
 package fr.unis.trombizz.shared.convert;
 
-import fr.unis.trombizz.shared.bo.Collaborateur;
+import fr.unis.trombizz.shared.bo.ICollaborateur;
 import fr.unis.trombizz.shared.dto.SimplePersonneDto;
 
 /**
  *
  * @author cyril
  */
-public class SimpleCollaborateurConverter extends AbstractConverter<Collaborateur, SimplePersonneDto>{
+public class SimpleCollaborateurConverter extends AbstractConverter<ICollaborateur, SimplePersonneDto>{
 
     public static final SimpleCollaborateurConverter INSTANCE = new SimpleCollaborateurConverter();
     
@@ -15,7 +15,7 @@ public class SimpleCollaborateurConverter extends AbstractConverter<Collaborateu
         
     }
     
-    public SimplePersonneDto convert(Collaborateur a) {
+    public SimplePersonneDto convert(ICollaborateur a) {
         if(a == null){
             return null;
         }
@@ -23,7 +23,7 @@ public class SimpleCollaborateurConverter extends AbstractConverter<Collaborateu
         dto.setId(a.getId());
         dto.setNom(a.getNom());
         dto.setPrenom(a.getPrenom());
-        dto.setPhotoUrl(a.getPhotoUrl());
+        dto.setPhotoName(a.getPhotoName());
         return dto;
     }
 

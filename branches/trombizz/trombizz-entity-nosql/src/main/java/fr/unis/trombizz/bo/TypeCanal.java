@@ -1,12 +1,14 @@
-package fr.unis.trombizz.entity;
+package fr.unis.trombizz.bo;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
 
-public class TypeCanal {
+import fr.unis.trombizz.shared.bo.ITypeCanal;
+
+public class TypeCanal implements ITypeCanal {
 	@Id
 	@Column(name="id")
-	private int id;
+	private long id;
 	
 	@Column(name="libelle")
 	private String libelle;
@@ -14,11 +16,11 @@ public class TypeCanal {
 	@Column(name="libelle_abrege")
 	private String libelleAbrege;
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

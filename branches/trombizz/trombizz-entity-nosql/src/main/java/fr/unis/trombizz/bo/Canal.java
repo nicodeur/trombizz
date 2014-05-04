@@ -1,4 +1,4 @@
-package fr.unis.trombizz.entity;
+package fr.unis.trombizz.bo;
 
 import javax.persistence.Column;
 import javax.persistence.FetchType;
@@ -6,20 +6,23 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-public class Canal {
+import fr.unis.trombizz.shared.bo.ICanal;
+import fr.unis.trombizz.shared.bo.ITypeCanal;
+
+public class Canal implements ICanal{
 	@Id
 	@Column(name="id")
-	private int id;
+	private long id;
 	
 	@ManyToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="type_canal_id")
 	private TypeCanal typeCanal;
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -27,9 +30,9 @@ public class Canal {
 		return typeCanal;
 	}
 
-	public void setTypeCanal(TypeCanal typeCanal) {
-		this.typeCanal = typeCanal;
+	public void setTypeCanal(ITypeCanal typeCanal) {
+		if(typeCanal instanceof TypeCanal)
+			this.typeCanal = (TypeCanal) typeCanal;
 	}
-	
 	
 }

@@ -8,10 +8,11 @@ import java.io.Serializable;
  */
 public class SimplePersonneDto implements Serializable {
 
-    private Long id;
+	private static final long serialVersionUID = 1L;
+	private Long id;
     private String nom;
     private String prenom;
-    private String photoUrl;
+    private String photoName;
 
     public Long getId() {
         return id;
@@ -37,12 +38,12 @@ public class SimplePersonneDto implements Serializable {
         this.prenom = prenom;
     }
 
-    public String getPhotoUrl() {
-        return photoUrl;
+    public String getPhotoName() {
+        return photoName;
     }
 
-    public void setPhotoUrl(String photoUrl) {
-        this.photoUrl = photoUrl;
+    public void setPhotoName(String photoName) {
+        this.photoName = photoName;
     }
 
 }

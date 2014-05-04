@@ -1,4 +1,4 @@
-package fr.unis.trombizz.entity;
+package fr.unis.trombizz.bo;
 
 import java.util.Date;
 
@@ -9,11 +9,14 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import fr.unis.trombizz.shared.bo.ICollaborateur;
+import fr.unis.trombizz.shared.bo.IConges;
+
 @Entity(name="conges")
-public class Conges {
+public class Conges implements IConges {
 	@Id
 	@Column(name="id")
-	private int id;
+	private long id;
 	
 	@Column(name="debut")
 	private Date debut;
@@ -23,13 +26,13 @@ public class Conges {
 	
 	@ManyToOne(fetch=FetchType.LAZY	)
 	@JoinColumn(name="personne_id")
-	private Personne personne;
+	private Collaborateur personne;
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -49,12 +52,13 @@ public class Conges {
 		this.fin = fin;
 	}
 
-	public Personne getPersonne() {
+	public Collaborateur getPersonne() {
 		return personne;
 	}
 
-	public void setPersonne(Personne personne) {
-		this.personne = personne;
+	public void setPersonne(ICollaborateur personne) {
+		if(personne instanceof Collaborateur)
+			this.personne = (Collaborateur) personne;
 	}
 	
 	

@@ -1,13 +1,13 @@
 package fr.unis.trombizz.shared.convert;
 
-import fr.unis.trombizz.shared.bo.Collaborateur;
+import fr.unis.trombizz.shared.bo.ICollaborateur;
 import fr.unis.trombizz.shared.dto.PersonneDto;
 
 /**
  *
  * @author cyril
  */
-public class CollaborateurConverter extends AbstractConverter<Collaborateur, PersonneDto> {
+public class CollaborateurConverter extends AbstractConverter<ICollaborateur, PersonneDto> {
 
     public static final CollaborateurConverter INSTANCE = new CollaborateurConverter();
 
@@ -15,7 +15,7 @@ public class CollaborateurConverter extends AbstractConverter<Collaborateur, Per
 
     }
 
-    public PersonneDto convert(Collaborateur a) {
+    public PersonneDto convert(ICollaborateur a) {
         if(a == null){
             return null;
         }

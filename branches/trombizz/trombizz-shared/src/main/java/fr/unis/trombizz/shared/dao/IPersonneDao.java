@@ -6,9 +6,10 @@
 
 package fr.unis.trombizz.shared.dao;
 
-import fr.unis.trombizz.shared.bo.Collaborateur;
-import fr.unis.trombizz.shared.dto.RecherchePersonneDto;
 import java.util.List;
+
+import fr.unis.trombizz.shared.bo.ICollaborateur;
+import fr.unis.trombizz.shared.dto.RecherchePersonneDto;
 
 /**
  *
@@ -16,7 +17,7 @@ import java.util.List;
  */
 public interface IPersonneDao {
     
-    List<Collaborateur> rechercherCollaborateur(RecherchePersonneDto criteria) ;
+    List<ICollaborateur> rechercherCollaborateur(RecherchePersonneDto criteria) ;
     
-    Collaborateur findById(Long id);
+    ICollaborateur findById(Long id);
 }

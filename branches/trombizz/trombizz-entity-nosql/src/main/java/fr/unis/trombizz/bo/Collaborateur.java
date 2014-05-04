@@ -1,4 +1,4 @@
-package fr.unis.trombizz.entity;
+package fr.unis.trombizz.bo;
 
 import java.util.Date;
 
@@ -6,12 +6,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import fr.unis.trombizz.shared.bo.ICollaborateur;
+
 @Entity
-public class Personne {
+public class Collaborateur implements ICollaborateur {
 	
 	@Id
 	@Column(name="id")
-	private int id;
+	private long id;
 	
 	@Column(name="nom")
 	private String nom;
@@ -25,11 +27,17 @@ public class Personne {
 	@Column(name="date_naissance")
 	private Date dateNaissance;
 
-	public int getId() {
+	@Column(name="email")
+	private String email;
+	
+	@Column(name="telephone")
+	private String telephone;
+	
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -63,6 +71,22 @@ public class Personne {
 
 	public void setDateNaissance(Date dateNaissance) {
 		this.dateNaissance = dateNaissance;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getTelephone() {
+		return telephone;
+	}
+
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
 	}
 	
 	
