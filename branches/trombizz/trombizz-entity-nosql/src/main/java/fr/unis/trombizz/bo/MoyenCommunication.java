@@ -6,6 +6,7 @@ import javax.persistence.ManyToOne;
 
 import fr.unis.trombizz.shared.bo.ICollaborateur;
 import fr.unis.trombizz.shared.bo.IMoyenCommunication;
+import fr.unis.trombizz.shared.bo.ITypeCanal;
 
 public class MoyenCommunication implements IMoyenCommunication {
 	
@@ -13,6 +14,9 @@ public class MoyenCommunication implements IMoyenCommunication {
 	@JoinColumn(name="personne_id")
 	private Collaborateur personne;
 
+	@ManyToOne(fetch=FetchType.EAGER)
+	private TypeCanal typeCanal;
+	
 	public Collaborateur getPersonne() {
 		return personne;
 	}
@@ -20,6 +24,15 @@ public class MoyenCommunication implements IMoyenCommunication {
 	public void setPersonne(ICollaborateur personne) {
 		if(personne instanceof Collaborateur)
 			this.personne = (Collaborateur) personne;
+	}
+
+	public ITypeCanal getTypeCanal() {
+		return typeCanal;
+	}
+
+	public void setTypeCanal(ITypeCanal typeCanal) {
+		if(typeCanal instanceof TypeCanal)
+			this.typeCanal = (TypeCanal) typeCanal;
 	}
 	
 	

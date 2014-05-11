@@ -1,6 +1,8 @@
 package fr.unis.trombizz.bo;
 
 import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import fr.unis.trombizz.shared.bo.ITypeCanal;
@@ -8,6 +10,7 @@ import fr.unis.trombizz.shared.bo.ITypeCanal;
 public class TypeCanal implements ITypeCanal {
 	@Id
 	@Column(name="id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
 	@Column(name="libelle")

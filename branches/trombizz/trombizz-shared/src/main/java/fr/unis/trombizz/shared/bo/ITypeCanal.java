@@ -1,6 +1,6 @@
 package fr.unis.trombizz.shared.bo;
 
-public interface ITypeCanal {
+public interface ITypeCanal extends Entite {
 	
 	public long getId();
 

@@ -1,7 +1,7 @@
 package fr.unis.trombizz.shared.bo;
 
 
-public interface IOrdreMission {
+public interface IOrdreMission extends Entite {
 	
 	public ICollaborateur getPersonne();
 

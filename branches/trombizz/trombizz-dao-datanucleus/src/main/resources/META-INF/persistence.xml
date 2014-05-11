@@ -12,7 +12,15 @@
             <property name="datanucleus.ConnectionURL" value="appengine"/>
             <property name="datanucleus.singletonEMFForName" value="true"/>
         </properties>
-
+		
+		<class>fr.unis.trombizz.bo.Canal</class>
+		<class>fr.unis.trombizz.bo.Client</class>
+		<class>fr.unis.trombizz.bo.Collaborateur</class>
+		<class>fr.unis.trombizz.bo.Conges</class>
+		<class>fr.unis.trombizz.bo.Mission</class>
+		<class>fr.unis.trombizz.bo.MoyenCommunication</class>
+		<class>fr.unis.trombizz.bo.OrdreMission</class>
+		<class>fr.unis.trombizz.bo.TypeCanal</class>
     </persistence-unit>
 
 </persistence>

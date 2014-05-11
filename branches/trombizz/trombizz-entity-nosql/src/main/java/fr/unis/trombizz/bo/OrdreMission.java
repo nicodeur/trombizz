@@ -1,42 +1,36 @@
 package fr.unis.trombizz.bo;
 
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 import fr.unis.trombizz.shared.bo.ICollaborateur;
 import fr.unis.trombizz.shared.bo.IMission;
 import fr.unis.trombizz.shared.bo.IOrdreMission;
 
-@Entity(name="ordre_mission")
+@Entity
+@Table(name="ordre_mission")
 public class OrdreMission implements IOrdreMission {
+
+	@EmbeddedId
+	private OrdreMissionPK ordreMissionPk;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="personne_id")
-	private Collaborateur personne;
-	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="mission_id")
-	private Mission mission;
 
 	public Collaborateur getPersonne() {
-		return personne;
+		return ordreMissionPk.getPersonne();
 	}
 
 	public void setPersonne(ICollaborateur personne) {
 		if(personne instanceof Collaborateur)
-			this.personne = (Collaborateur) personne;
+			this.ordreMissionPk.setPersonne((Collaborateur) personne);
 	}
 
 	public Mission getMission() {
-		return mission;
+		return ordreMissionPk.getMission();
 	}
 
 	public void setMission(IMission mission) {
 		if(mission instanceof Mission)
-			this.mission = (Mission) mission;
+			this.ordreMissionPk.setMission((Mission) mission);
 	}
-	
-	
 }

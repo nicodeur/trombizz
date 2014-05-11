@@ -1,6 +1,6 @@
 package fr.unis.trombizz.shared.bo;
 
-public interface IClient {
+public interface IClient extends Entite{
 
 	public long getId();
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CommonsCopy" default="copy" basedir=".">
+    <target name="copy">
+        <copy todir="src/main/webapp/WEB-INF/classes">
+            <fileset dir="..\trombizz-dao-datanucleus\target\classes"></fileset>
+             <fileset dir="..\trombizz-entity-nosql\target\classes"></fileset>
+             <fileset dir="..\trombizz-shared\target\classes"></fileset>
+        </copy>
+    </target>
+</project>

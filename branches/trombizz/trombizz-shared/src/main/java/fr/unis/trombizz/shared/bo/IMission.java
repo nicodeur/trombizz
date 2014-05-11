@@ -1,7 +1,7 @@
 package fr.unis.trombizz.shared.bo;
 
 
-public interface IMission {
+public interface IMission extends Entite {
 
 	public long getId();
 

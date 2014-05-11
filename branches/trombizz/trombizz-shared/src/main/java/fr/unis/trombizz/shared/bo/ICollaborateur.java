@@ -3,7 +3,7 @@ package fr.unis.trombizz.shared.bo;
 import java.util.Date;
 
 
-public interface ICollaborateur {
+public interface ICollaborateur extends Entite {
 	
 	public long getId();
 

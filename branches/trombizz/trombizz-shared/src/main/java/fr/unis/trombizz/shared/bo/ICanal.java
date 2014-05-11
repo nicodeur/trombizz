@@ -1,7 +1,7 @@
 package fr.unis.trombizz.shared.bo;
 
 
-public interface ICanal {
+public interface ICanal extends Entite{
 
 	public long getId();
 

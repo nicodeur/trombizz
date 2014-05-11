@@ -23,6 +23,7 @@ public class CollaborateurConverter extends AbstractConverter<ICollaborateur, Pe
         d.setDateNaissance(a.getDateNaissance());
         d.setEmail(a.getEmail());
         d.setTelephone(a.getTelephone());
+
         return d;
     }
 

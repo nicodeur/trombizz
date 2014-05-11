@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="trombi" version="2.5">
+  <servlet>
+    <servlet-name>recherche</servlet-name>
+    <servlet-class>fr.unis.trombizz.controller.RechercheController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>recherche</servlet-name>
+    <url-pattern>/recherche.html</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>jsp/recherche.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+</web-app>

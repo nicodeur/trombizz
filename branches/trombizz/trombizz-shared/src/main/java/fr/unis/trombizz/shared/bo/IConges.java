@@ -2,7 +2,7 @@ package fr.unis.trombizz.shared.bo;
 
 import java.util.Date;
 
-public interface IConges {
+public interface IConges extends Entite {
 
 	public long getId();
 
